@@ -32,7 +32,7 @@ class IDealIssuers implements Countable, IteratorAggregate, JsonSerializable {
 	 * 
 	 * @return int
 	 */
-	public function count() {
+	public function count(): int {
 		return \count( $this->items );
 	}
 

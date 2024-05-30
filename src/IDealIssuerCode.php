@@ -113,6 +113,13 @@ enum IDealIssuerCode: string {
 	case BITSNL2A = 'BITSNL2A';
 
 	/**
+	 * Code for testing.
+	 * 
+	 * @var string
+	 */
+	case TESTNL2A = 'TESTNL2A';
+
+	/**
 	 * Name.
 	 * 
 	 * @return string
@@ -133,6 +140,7 @@ enum IDealIssuerCode: string {
 			IDealIssuerCode::TRIONL2U => 'Triodos Bank',
 			IDealIssuerCode::FVLBNL22 => 'Van Lanschot',
 			IDealIssuerCode::BITSNL2A => 'yoursafe',
+			IDealIssuerCode::TESTNL2A => 'Test',
 		};
 	}
 }

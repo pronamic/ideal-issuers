@@ -22,8 +22,25 @@ class IDealIssuerService {
 	public function get_issuers() {
 		$issuers = new IDealIssuers();
 
-		foreach ( IDealIssuerCode::cases() as $ideal_issuer_code ) {
-			$issuers->items[] = new IDealIssuer( $ideal_issuer_code->value, $ideal_issuer_code->name() );
+		$codes = [
+			IDealIssuerCode::ABNANL2A,
+			IDealIssuerCode::ASNBNL21,
+			IDealIssuerCode::BUNQNL2A,
+			IDealIssuerCode::INGBNL2A,
+			IDealIssuerCode::KNABNL2H,
+			IDealIssuerCode::NTSBDEB1,
+			IDealIssuerCode::NNBANL2G,
+			IDealIssuerCode::RABONL2U,
+			IDealIssuerCode::RBRBNL21,
+			IDealIssuerCode::REVOLT21,
+			IDealIssuerCode::SNSBNL2A,
+			IDealIssuerCode::TRIONL2U,
+			IDealIssuerCode::FVLBNL22,
+			IDealIssuerCode::BITSNL2A,
+		];
+
+		foreach ( $codes as $code ) {
+			$issuers->items[] = new IDealIssuer( $code->value, $code->name() );
 		}
 
 		return $issuers;
