@@ -1,5 +1,19 @@
 # Pronamic iDEAL issuers
 
+## Usage
+
+```php
+use Pronamic\IDealIssuers\IDealIssuerService;
+
+$ideal_issuer_service = new IDealIssuerService();
+
+$ideal_issuers = $ideal_issuer_service->get_issuers();
+
+foreach ( $ideal_issuers as $ideal_issuer ) {
+	echo $ideal_issuer->code, PHP_EOL;
+}
+```
+
 ## Ideas
 
 - Publish to NPM.
