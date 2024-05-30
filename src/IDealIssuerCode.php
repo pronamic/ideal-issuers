@@ -16,106 +16,76 @@ namespace Pronamic\IDealIssuers;
 enum IDealIssuerCode: string {
 	/**
 	 * ABN AMRO.
-	 *
-	 * @var string
 	 */
 	case ABNANL2A = 'ABNANL2A';
 
 	/**
 	 * ASN Bank.
-	 *
-	 * @var string
 	 */
 	case ASNBNL21 = 'ASNBNL21';
 
 	/**
 	 * Code for bunq.
-	 *
-	 * @var string
 	 */
 	case BUNQNL2A = 'BUNQNL2A';
 
 	/**
 	 * ING.
-	 *
-	 * @var string
 	 */
 	case INGBNL2A = 'INGBNL2A';
 
 	/**
 	 * Knab.
-	 *
-	 * @var string
 	 */
 	case KNABNL2H = 'KNABNL2H';
 
 	/**
 	 * N26.
-	 *
-	 * @var string
 	 */
 	case NTSBDEB1 = 'NTSBDEB1';
 
 	/**
 	 * Nationale Nederlanden.
-	 *
-	 * @var string
 	 */
 	case NNBANL2G = 'NNBANL2G';
 
 	/**
 	 * Rabobank.
-	 * 
-	 * @var string
 	 */
 	case RABONL2U = 'RABONL2U';
 
 	/**
 	 * RegioBank
-	 * 
-	 * @var string
 	 */
 	case RBRBNL21 = 'RBRBNL21';
 
 	/**
 	 * Revolut.
-	 * 
-	 * @var string
 	 */
 	case REVOLT21 = 'REVOLT21';
 
 	/**
 	 * SNS Bank.
-	 * 
-	 * @var string
 	 */
 	case SNSBNL2A = 'SNSBNL2A';
 
 	/**
 	 * Triodos Bank.
-	 * 
-	 * @var string
 	 */
 	case TRIONL2U = 'TRIONL2U';
 
 	/**
 	 * Van Lanschot.
-	 * 
-	 * @var string
 	 */
 	case FVLBNL22 = 'FVLBNL22';
 
 	/**
 	 * Code for yoursafe.
-	 * 
-	 * @var string
 	 */
 	case BITSNL2A = 'BITSNL2A';
 
 	/**
 	 * Code for testing.
-	 * 
-	 * @var string
 	 */
 	case TESTNL2A = 'TESTNL2A';
 

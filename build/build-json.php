@@ -1,6 +1,6 @@
 <?php
 
-namespace Pronamic\IdealIssuers;
+namespace Pronamic\IDealIssuers;
 
 require __DIR__ . '/../vendor/autoload.php';
 

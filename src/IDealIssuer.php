@@ -15,7 +15,7 @@ use JsonSerializable;
 /**
  * The iDEAL issuer class
  */
-class IDealIssuer implements JsonSerializable {
+final class IDealIssuer implements JsonSerializable {
 	/**
 	 * Code.
 	 *

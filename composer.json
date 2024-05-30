@@ -4,7 +4,7 @@
     "license": "GPL-2.0-or-later",
     "autoload": {
         "psr-4": {
-            "Pronamic\\IdealIssuers\\": "src/"
+            "Pronamic\\IDealIssuers\\": "src/"
         }
     },
     "authors": [
@@ -13,13 +13,16 @@
             "email": "info@pronamic.nl"
         }
     ],
-    "require": {},
+    "require-dev": {
+        "phpstan/phpstan": "^1.11"
+    },
     "scripts": {
         "build": [
             "@build-json",
             "@build-xml"
         ],
         "build-json": "php build/build-json.php > ideal-issuers.json",
-        "build-xml": "php build/build-xml.php > ideal-issuers.xml"
+        "build-xml": "php build/build-xml.php > ideal-issuers.xml",
+        "phpstan": "vendor/bin/phpstan analyse"
     }
 }

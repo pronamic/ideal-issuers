@@ -18,8 +18,10 @@ use Traversable;
 
 /**
  * The iDEAL issuers class
+ * 
+ * @phpstan-implements IteratorAggregate<int, IDealIssuer>
  */
-class IDealIssuers implements Countable, IteratorAggregate, JsonSerializable {
+final class IDealIssuers implements Countable, IteratorAggregate, JsonSerializable {
 	/**
 	 * Code.
 	 *
@@ -39,7 +41,7 @@ class IDealIssuers implements Countable, IteratorAggregate, JsonSerializable {
 	/**
 	 * Get iterator.
 	 * 
-	 * @return ArrayIterator
+	 * @return ArrayIterator<int, IDealIssuer>
 	 */
 	public function getIterator(): Traversable {
 		return new ArrayIterator( $this->items );
@@ -49,7 +51,7 @@ class IDealIssuers implements Countable, IteratorAggregate, JsonSerializable {
 	 * JSON serialize.
 	 *
 	 * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
-	 * @return array
+	 * @return IDealIssuer[]
 	 */
 	public function jsonSerialize(): array {
 		return $this->items;

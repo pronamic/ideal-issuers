@@ -8,12 +8,12 @@
  * @package   Pronamic\IDealIssuers
  */
 
-namespace Pronamic\IdealIssuers;
+namespace Pronamic\IDealIssuers;
 
 /**
  * The iDEAL issuer service class
  */
-class IDealIssuerService {
+final class IDealIssuerService {
 	/**
 	 * Get issuers.
 	 * 
