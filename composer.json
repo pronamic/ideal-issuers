@@ -13,8 +13,17 @@
             "email": "info@pronamic.nl"
         }
     ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    },
     "require-dev": {
-        "phpstan/phpstan": "^1.11"
+        "phpstan/phpstan": "^1.11",
+        "pronamic/wp-coding-standards": "^2.2"
     },
     "scripts": {
         "build": [
@@ -23,6 +32,7 @@
         ],
         "build-json": "php build/build-json.php > ideal-issuers.json",
         "build-xml": "php build/build-xml.php > ideal-issuers.xml",
+        "phpcs": "vendor/bin/phpcs",
         "phpstan": "vendor/bin/phpstan analyse"
     }
 }

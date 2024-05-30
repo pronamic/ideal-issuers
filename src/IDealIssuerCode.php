@@ -95,6 +95,7 @@ enum IDealIssuerCode: string {
 	 * @return string
 	 */
 	public function name(): string {
+		// phpcs:ignore PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext
 		return match ( $this ) {
 			IDealIssuerCode::ABNANL2A => 'ABN AMRO',
 			IDealIssuerCode::ASNBNL21 => 'ASN Bank',
