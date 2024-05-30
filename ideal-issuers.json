@@ -1,0 +1,58 @@
+[
+    {
+        "code": "ABNANL2A",
+        "name": "ABN AMRO"
+    },
+    {
+        "code": "ASNBNL21",
+        "name": "ASN Bank"
+    },
+    {
+        "code": "BUNQNL2A",
+        "name": "bunq"
+    },
+    {
+        "code": "INGBNL2A",
+        "name": "ING"
+    },
+    {
+        "code": "KNABNL2H",
+        "name": "Knab"
+    },
+    {
+        "code": "NTSBDEB1",
+        "name": "N26"
+    },
+    {
+        "code": "NNBANL2G",
+        "name": "Nationale Nederlanden"
+    },
+    {
+        "code": "RABONL2U",
+        "name": "Rabobank"
+    },
+    {
+        "code": "RBRBNL21",
+        "name": "RegioBank"
+    },
+    {
+        "code": "REVOLT21",
+        "name": "Revolut"
+    },
+    {
+        "code": "SNSBNL2A",
+        "name": "SNS Bank"
+    },
+    {
+        "code": "TRIONL2U",
+        "name": "Triodos Bank"
+    },
+    {
+        "code": "FVLBNL22",
+        "name": "Van Lanschot"
+    },
+    {
+        "code": "BITSNL2A",
+        "name": "yoursafe"
+    }
+]

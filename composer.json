@@ -1,0 +1,25 @@
+{
+    "name": "pronamic/ideal-issuers",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Pronamic\\IdealIssuers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pronamic",
+            "email": "info@pronamic.nl"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "build": [
+            "@build-json",
+            "@build-xml"
+        ],
+        "build-json": "php build/build-json.php > ideal-issuers.json",
+        "build-xml": "php build/build-xml.php > ideal-issuers.xml"
+    }
+}

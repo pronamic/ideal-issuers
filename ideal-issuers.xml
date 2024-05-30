@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issuers>
+  <issuer>
+    <code>ABNANL2A</code>
+    <name>ABN AMRO</name>
+  </issuer>
+  <issuer>
+    <code>ASNBNL21</code>
+    <name>ASN Bank</name>
+  </issuer>
+  <issuer>
+    <code>BUNQNL2A</code>
+    <name>bunq</name>
+  </issuer>
+  <issuer>
+    <code>INGBNL2A</code>
+    <name>ING</name>
+  </issuer>
+  <issuer>
+    <code>KNABNL2H</code>
+    <name>Knab</name>
+  </issuer>
+  <issuer>
+    <code>NTSBDEB1</code>
+    <name>N26</name>
+  </issuer>
+  <issuer>
+    <code>NNBANL2G</code>
+    <name>Nationale Nederlanden</name>
+  </issuer>
+  <issuer>
+    <code>RABONL2U</code>
+    <name>Rabobank</name>
+  </issuer>
+  <issuer>
+    <code>RBRBNL21</code>
+    <name>RegioBank</name>
+  </issuer>
+  <issuer>
+    <code>REVOLT21</code>
+    <name>Revolut</name>
+  </issuer>
+  <issuer>
+    <code>SNSBNL2A</code>
+    <name>SNS Bank</name>
+  </issuer>
+  <issuer>
+    <code>TRIONL2U</code>
+    <name>Triodos Bank</name>
+  </issuer>
+  <issuer>
+    <code>FVLBNL22</code>
+    <name>Van Lanschot</name>
+  </issuer>
+  <issuer>
+    <code>BITSNL2A</code>
+    <name>yoursafe</name>
+  </issuer>
+</issuers>
