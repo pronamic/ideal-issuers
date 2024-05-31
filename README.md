@@ -1,5 +1,19 @@
 # Pronamic iDEAL issuers
 
+## Usage
+
+```php
+use Pronamic\IDealIssuers\IDealIssuerService;
+
+$ideal_issuer_service = new IDealIssuerService();
+
+$ideal_issuers = $ideal_issuer_service->get_issuers();
+
+foreach ( $ideal_issuers as $ideal_issuer ) {
+	echo $ideal_issuer->code, PHP_EOL;
+}
+```
+
 ## List
 
 | Code | Name |
@@ -18,20 +32,6 @@
 | `TRIONL2U` | Triodos Bank |
 | `FVLBNL22` | Van Lanschot |
 | `BITSNL2A` | yoursafe |
-
-## Usage
-
-```php
-use Pronamic\IDealIssuers\IDealIssuerService;
-
-$ideal_issuer_service = new IDealIssuerService();
-
-$ideal_issuers = $ideal_issuer_service->get_issuers();
-
-foreach ( $ideal_issuers as $ideal_issuer ) {
-	echo $ideal_issuer->code, PHP_EOL;
-}
-```
 
 ## Ideas
 
