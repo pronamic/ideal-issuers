@@ -25,6 +25,9 @@
 		"phpstan/phpstan": "^1.11",
 		"pronamic/wp-coding-standards": "^2.2"
 	},
+	"suggest": {
+		"pronamic/wp-pay-logos": "Add images to the iDEAL issuers"
+	},
 	"scripts": {
 		"build": [
 			"@build-json",
