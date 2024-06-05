@@ -23,7 +23,8 @@
 	},
 	"require-dev": {
 		"phpstan/phpstan": "^1.11",
-		"pronamic/wp-coding-standards": "^2.2"
+		"pronamic/wp-coding-standards": "^2.2",
+		"pronamic/wp-pay-logos": "^2.1"
 	},
 	"suggest": {
 		"pronamic/wp-pay-logos": "Add images to the iDEAL issuers"
