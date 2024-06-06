@@ -48,6 +48,11 @@ final class IDealIssuerService {
 		if ( \class_exists( ImageService::class ) ) {
 			$image_service = new ImageService();
 
+			$variations = [
+				'ideal-hub-40x40.svg',
+				'mollie-32x24.svg',
+			];
+
 			$slugs = [
 				IDealIssuerCode::ABNANL2A->value => 'abn-amro',
 				IDealIssuerCode::ASNBNL21->value => 'asn-bank',
@@ -68,10 +73,12 @@ final class IDealIssuerService {
 			foreach ( $issuers as $issuer ) {
 				$slug = $slugs[ $issuer->code ];
 
-				$path = $image_service->get_path( "ideal-issuers/$slug/ideal-issuer-$slug-mollie-32x24.svg" );
+				foreach ( $variations as $variation ) {
+					$path = $image_service->get_path( "ideal-issuers/$slug/ideal-issuer-$slug-$variation" );
 
-				if ( \is_readable( $path ) ) {
-					$issuer->images['mollie-32x24.svg'] = $path;
+					if ( \is_readable( $path ) ) {
+						$issuer->images[ $variation ] = $path;
+					}
 				}
 			}
 		}
