@@ -18,28 +18,28 @@ $ideal_issuers = $ideal_issuer_service->get_issuers();
 
 $image_variations = [
 	'ideal-hub-40x40.svg' => (object) [
-		'label'          => 'iDEAL Hub SVG',
+		'label'          => 'iDEAL Hub',
 		'width'          => 40,
 		'height'         => 40,
 		'display_width'  => 40,
 		'display_height' => 40,
 	],
 	'mollie-32x24.svg'    => (object) [
-		'label'          => 'Mollie SVG',
+		'label'          => 'Mollie',
 		'width'          => 32,
 		'height'         => 24,
 		'display_width'  => 32,
 		'display_height' => 24,
 	],
 	'icon-512x512.svg'    => (object) [
-		'label'          => 'Pronamic SVG',
+		'label'          => 'Pronamic',
 		'width'          => 512,
 		'height'         => 512,
 		'display_width'  => 64,
 		'display_height' => 64,
 	],
 	'640x360.svg'         => (object) [
-		'label'          => 'Pronamic SVG',
+		'label'          => 'Pronamic',
 		'width'          => 640,
 		'height'         => 360,
 		'display_width'  => 128,
