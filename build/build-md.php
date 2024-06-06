@@ -54,7 +54,7 @@ $headings = [
 
 foreach ( $image_variations as $key => $image_variation ) {
 	$headings[] = \sprintf(
-		'%s<br>`%s` `×` `%s`',
+		'%s<br>`%s` `×` `%s`',
 		$image_variation->label,
 		$image_variation->width,
 		$image_variation->height,
