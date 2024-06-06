@@ -16,8 +16,8 @@ foreach ( $ideal_issuers as $ideal_issuer ) {
 
 ## List
 
-| Code | Name | Mollie `32` `×` `24` SVG | iDEAL Hub `40` `×` `40` SVG |
-| ---- | ---- | ------------------------ |---------------------------- |
+| Code | Name | Mollie SVG<br>`32` `×` `24` | iDEAL Hub SVG<br>`40` `×` `40` |
+| ---- | ---- | --------------------------- | ------------------------------ |
 | `ABNANL2A` | ABN AMRO | ![ABN AMRO](https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/abn-amro/ideal-issuer-abn-amro-mollie-32x24.svg) | ![ABN AMRO](https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/abn-amro/ideal-issuer-abn-amro-ideal-hub-40x40.svg) |
 | `ASNBNL21` | ASN Bank | ![ASN Bank](https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/asn-bank/ideal-issuer-asn-bank-mollie-32x24.svg) | ![ASN Bank](https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/asn-bank/ideal-issuer-asn-bank-ideal-hub-40x40.svg) |
 | `BUNQNL2A` | bunq | ![bunq](https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/bunq/ideal-issuer-bunq-mollie-32x24.svg) | ![bunq](https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/bunq/ideal-issuer-bunq-ideal-hub-40x40.svg) |
