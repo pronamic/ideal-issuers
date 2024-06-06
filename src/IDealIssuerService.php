@@ -49,6 +49,7 @@ final class IDealIssuerService {
 			$image_service = new ImageService();
 
 			$variations = [
+				'icon-512x512.svg',
 				'ideal-hub-40x40.svg',
 				'mollie-32x24.svg',
 			];

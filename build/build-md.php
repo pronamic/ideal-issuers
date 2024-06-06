@@ -19,6 +19,7 @@ $ideal_issuers = $ideal_issuer_service->get_issuers();
 $image_variations = [
 	'ideal-hub-40x40.svg' => 'iDEAL Hub SVG<br>`40` `×` `40`',
 	'mollie-32x24.svg'    => 'Mollie SVG<br>`32` `×` `24`',
+	'icon-512x512.svg'    => 'Pronamic SVG<br>`512` `×` `512`',
 ];
 
 $headings = [
