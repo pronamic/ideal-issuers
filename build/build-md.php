@@ -29,6 +29,8 @@ foreach ( $ideal_issuers as $ideal_issuer ) {
 
 		$url = 'https://cdn.jsdelivr.net/npm/@wp-pay/logos@2.1.0' . $rel_path;
 
+		$url = 'https://raw.github.com/pronamic/wp-pay-logos/main' . $rel_path;
+
 		echo '![', $ideal_issuer->name, '](', $url, ')';
 	}
 
@@ -40,6 +42,8 @@ foreach ( $ideal_issuers as $ideal_issuer ) {
 		$rel_path = \substr( $path, \strlen( $wp_pay_logos_path ) );
 
 		$url = 'https://cdn.jsdelivr.net/npm/@wp-pay/logos@2.1.0' . $rel_path;
+
+		$url = 'https://raw.github.com/pronamic/wp-pay-logos/main' . $rel_path;
 
 		echo '![', $ideal_issuer->name, '](', $url, ')';
 	}
