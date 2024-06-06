@@ -17,9 +17,27 @@ $ideal_issuer_service = new IDealIssuerService();
 $ideal_issuers = $ideal_issuer_service->get_issuers();
 
 $image_variations = [
-	'ideal-hub-40x40.svg' => 'iDEAL Hub SVG<br>`40` `×` `40`',
-	'mollie-32x24.svg'    => 'Mollie SVG<br>`32` `×` `24`',
-	'icon-512x512.svg'    => 'Pronamic SVG<br>`512` `×` `512`',
+	'ideal-hub-40x40.svg' => (object) [
+		'label'          => 'iDEAL Hub SVG',
+		'width'          => 40,
+		'height'         => 40,
+		'display_width'  => 40,
+		'display_height' => 40,
+	],
+	'mollie-32x24.svg'    => (object) [
+		'label'          => 'Mollie SVG',
+		'width'          => 32,
+		'height'         => 24,
+		'display_width'  => 32,
+		'display_height' => 24,
+	],
+	'icon-512x512.svg'    => (object) [
+		'label'          => 'Pronamic SVG',
+		'width'          => 512,
+		'height'         => 512,
+		'display_width'  => 32,
+		'display_height' => 32,
+	],
 ];
 
 $headings = [
@@ -27,8 +45,8 @@ $headings = [
 	'Name',
 ];
 
-foreach ( $image_variations as $key => $label ) {
-	$headings[] = $label;
+foreach ( $image_variations as $key => $image_variation ) {
+	$headings[] = $image_variation->label;
 }
 
 echo '| ', implode( ' | ', $headings ), ' |', PHP_EOL;
@@ -40,7 +58,7 @@ foreach ( $ideal_issuers as $ideal_issuer ) {
 		$ideal_issuer->name,
 	];
 
-	foreach ( $image_variations as $key => $label ) {
+	foreach ( $image_variations as $key => $image_variation ) {
 		$column = '';
 
 		if ( \array_key_exists( $key, $ideal_issuer->images ) ) {
@@ -52,7 +70,13 @@ foreach ( $ideal_issuers as $ideal_issuer ) {
 
 			$url = 'https://raw.github.com/pronamic/wp-pay-logos/main' . $rel_path;
 
-			$column = '![' . $ideal_issuer->name . '](' . $url . ')';
+			$column = \sprintf(
+				'<img src="%s" width="%s" height="%s" alt="%s">',
+				$url,
+				$image_variation->display_width,
+				$image_variation->display_height,
+				$image_variation->label
+			);
 		}
 
 		$columns[] = $column;
