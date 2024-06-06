@@ -109,7 +109,7 @@ enum IDealIssuerCode: string {
 			IDealIssuerCode::REVOLT21 => 'Revolut',
 			IDealIssuerCode::SNSBNL2A => 'SNS Bank',
 			IDealIssuerCode::TRIONL2U => 'Triodos Bank',
-			IDealIssuerCode::FVLBNL22 => 'Van Lanschot',
+			IDealIssuerCode::FVLBNL22 => 'Van Lanschot Kempen',
 			IDealIssuerCode::BITSNL2A => 'yoursafe',
 			IDealIssuerCode::TESTNL2A => 'Test',
 		};
