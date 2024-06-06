@@ -16,6 +16,8 @@ foreach ( $ideal_issuers as $ideal_issuer ) {
 
 ## List
 
+The icons and logos are from the https://github.com/pronamic/wp-pay-logos library.
+
 | Code | Name | iDEAL Hub SVG<br>`40` `×` `40` | Mollie SVG<br>`32` `×` `24` | Pronamic SVG<br>`512` `×` `512` | Pronamic SVG<br>`640` `×` `360` |
 | --- | --- | --- | --- | --- | --- |
 | `ABNANL2A` | ABN AMRO | <img src="https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/abn-amro/ideal-issuer-abn-amro-ideal-hub-40x40.svg" width="40" height="40" alt="iDEAL Hub SVG"> | <img src="https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/abn-amro/ideal-issuer-abn-amro-mollie-32x24.svg" width="32" height="24" alt="Mollie SVG"> | <img src="https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/abn-amro/ideal-issuer-abn-amro-icon-512x512.svg" width="64" height="64" alt="Pronamic SVG"> | <img src="https://raw.github.com/pronamic/wp-pay-logos/main/dist/ideal-issuers/abn-amro/ideal-issuer-abn-amro-640x360.svg" width="128" height="72" alt="Pronamic SVG"> |
