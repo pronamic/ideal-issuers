@@ -103,7 +103,7 @@ enum IDealIssuerCode: string {
 			IDealIssuerCode::INGBNL2A => 'ING',
 			IDealIssuerCode::KNABNL2H => 'Knab',
 			IDealIssuerCode::NTSBDEB1 => 'N26',
-			IDealIssuerCode::NNBANL2G => 'Nationale Nederlanden',
+			IDealIssuerCode::NNBANL2G => 'Nationale-Nederlanden',
 			IDealIssuerCode::RABONL2U => 'Rabobank',
 			IDealIssuerCode::RBRBNL21 => 'RegioBank',
 			IDealIssuerCode::REVOLT21 => 'Revolut',
