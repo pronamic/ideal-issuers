@@ -38,6 +38,13 @@ $image_variations = [
 		'display_width'  => 32,
 		'display_height' => 32,
 	],
+	'640x360.svg'         => (object) [
+		'label'          => 'Pronamic SVG',
+		'width'          => 640,
+		'height'         => 360,
+		'display_width'  => 64,
+		'display_height' => 36,
+	],
 ];
 
 $headings = [
