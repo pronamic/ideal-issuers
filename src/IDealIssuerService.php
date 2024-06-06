@@ -10,6 +10,8 @@
 
 namespace Pronamic\IDealIssuers;
 
+use Pronamic\WpPayLogos\ImageService;
+
 /**
  * The iDEAL issuer service class
  */
@@ -41,6 +43,37 @@ final class IDealIssuerService {
 
 		foreach ( $codes as $code ) {
 			$issuers->items[] = new IDealIssuer( $code->value, $code->name() );
+		}
+
+		if ( \class_exists( ImageService::class ) ) {
+			$image_service = new ImageService();
+
+			$slugs = [
+				IDealIssuerCode::ABNANL2A->value => 'abn-amro',
+				IDealIssuerCode::ASNBNL21->value => 'asn-bank',
+				IDealIssuerCode::BUNQNL2A->value => 'bunq',
+				IDealIssuerCode::INGBNL2A->value => 'ing',
+				IDealIssuerCode::KNABNL2H->value => 'knab',
+				IDealIssuerCode::NTSBDEB1->value => 'n26',
+				IDealIssuerCode::NNBANL2G->value => 'nationale-nederlanden',
+				IDealIssuerCode::RABONL2U->value => 'rabobank',
+				IDealIssuerCode::RBRBNL21->value => 'regiobank',
+				IDealIssuerCode::REVOLT21->value => 'revolut',
+				IDealIssuerCode::SNSBNL2A->value => 'sns',
+				IDealIssuerCode::TRIONL2U->value => 'triodos-bank',
+				IDealIssuerCode::FVLBNL22->value => 'van-lanschot',
+				IDealIssuerCode::BITSNL2A->value => 'yoursafe',
+			];
+
+			foreach ( $issuers as $issuer ) {
+				$slug = $slugs[ $issuer->code ];
+
+				$path = $image_service->get_path( "ideal-issuers/$slug/ideal-issuer-$slug-mollie-32x24.svg" );
+
+				if ( \is_readable( $path ) ) {
+					$issuer->images['mollie-32x24.svg'] = $path;
+				}
+			}
 		}
 
 		return $issuers;
