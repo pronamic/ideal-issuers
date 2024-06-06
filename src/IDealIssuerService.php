@@ -66,7 +66,7 @@ final class IDealIssuerService {
 				IDealIssuerCode::REVOLT21->value => 'revolut',
 				IDealIssuerCode::SNSBNL2A->value => 'sns',
 				IDealIssuerCode::TRIONL2U->value => 'triodos-bank',
-				IDealIssuerCode::FVLBNL22->value => 'van-lanschot',
+				IDealIssuerCode::FVLBNL22->value => 'van-lanschot-kempen',
 				IDealIssuerCode::BITSNL2A->value => 'yoursafe',
 			];
 
