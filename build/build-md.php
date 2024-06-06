@@ -16,39 +16,48 @@ $ideal_issuer_service = new IDealIssuerService();
 
 $ideal_issuers = $ideal_issuer_service->get_issuers();
 
-echo '| Code | Name | Mollie SVG<br>`32` `×` `24` | iDEAL Hub SVG<br>`40` `×` `40` |', PHP_EOL;
-echo '| ---- | ---- | --------------------------- | ------------------------------ |', PHP_EOL;
+$image_variations = [
+	'ideal-hub-40x40.svg' => 'Mollie SVG<br>`32` `×` `24`',
+	'mollie-32x24.svg'    => 'iDEAL Hub SVG<br>`40` `×` `40`',
+];
+
+$headings = [
+	'Code',
+	'Name',
+];
+
+foreach ( $image_variations as $key => $label ) {
+	$headings[] = $label;
+}
+
+echo '| ', implode( ' | ', $headings ), ' |', PHP_EOL;
+echo '| ', implode( ' | ', \array_fill( 0, \count( $headings ), '---' ) ), ' |', PHP_EOL;
 
 foreach ( $ideal_issuers as $ideal_issuer ) {
-	echo '| `', $ideal_issuer->code, '` | ', $ideal_issuer->name, ' | ';
+	$columns = [
+		'`' . $ideal_issuer->code . '`',
+		$ideal_issuer->name,
+	];
 
-	if ( \array_key_exists( 'mollie-32x24.svg', $ideal_issuer->images ) ) {
-		$path = $ideal_issuer->images['mollie-32x24.svg'];
+	foreach ( $image_variations as $key => $label ) {
+		$column = '';
 
-		$rel_path = \substr( $path, \strlen( $wp_pay_logos_path ) );
+		if ( \array_key_exists( $key, $ideal_issuer->images ) ) {
+			$path = $ideal_issuer->images[ $key ];
 
-		$url = 'https://cdn.jsdelivr.net/npm/@wp-pay/logos@2.1.0' . $rel_path;
+			$rel_path = \substr( $path, \strlen( $wp_pay_logos_path ) );
 
-		$url = 'https://raw.github.com/pronamic/wp-pay-logos/main' . $rel_path;
+			$url = 'https://cdn.jsdelivr.net/npm/@wp-pay/logos@2.1.0' . $rel_path;
 
-		echo '![', $ideal_issuer->name, '](', $url, ')';
+			$url = 'https://raw.github.com/pronamic/wp-pay-logos/main' . $rel_path;
+
+			$column = '![' . $ideal_issuer->name . '](' . $url . ')';
+		}
+
+		$columns[] = $column;
 	}
 
-	echo ' | ';
-
-	if ( \array_key_exists( 'ideal-hub-40x40.svg', $ideal_issuer->images ) ) {
-		$path = $ideal_issuer->images['ideal-hub-40x40.svg'];
-
-		$rel_path = \substr( $path, \strlen( $wp_pay_logos_path ) );
-
-		$url = 'https://cdn.jsdelivr.net/npm/@wp-pay/logos@2.1.0' . $rel_path;
-
-		$url = 'https://raw.github.com/pronamic/wp-pay-logos/main' . $rel_path;
-
-		echo '![', $ideal_issuer->name, '](', $url, ')';
-	}
-
-	echo ' |', PHP_EOL;
+	echo '| ', implode( ' | ', $columns ), ' |', PHP_EOL;
 }
 
 echo PHP_EOL;
