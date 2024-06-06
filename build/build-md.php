@@ -46,7 +46,12 @@ $headings = [
 ];
 
 foreach ( $image_variations as $key => $image_variation ) {
-	$headings[] = $image_variation->label;
+	$headings[] = \sprintf(
+		'%s<br>`%s` `×` `%s`',
+		$image_variation->label,
+		$image_variation->width,
+		$image_variation->height,
+	);
 }
 
 echo '| ', implode( ' | ', $headings ), ' |', PHP_EOL;
