@@ -16,8 +16,8 @@ foreach ( $ideal_issuers as $ideal_issuer ) {
 
 ## List
 
-| Code | Name | Image |
-| ---- | ---- | ----- |
+| Code | Name | Mollie `32` `×` `24` SVG |
+| ---- | ---- | ------------------------ |
 | `ABNANL2A` | ABN AMRO | ![ABN AMRO](https://cdn.jsdelivr.net/npm/@wp-pay/logos@2.1.0/dist/ideal-issuers/abn-amro/ideal-issuer-abn-amro-mollie-32x24.svg) |
 | `ASNBNL21` | ASN Bank | ![ASN Bank](https://cdn.jsdelivr.net/npm/@wp-pay/logos@2.1.0/dist/ideal-issuers/asn-bank/ideal-issuer-asn-bank-mollie-32x24.svg) |
 | `BUNQNL2A` | bunq | ![bunq](https://cdn.jsdelivr.net/npm/@wp-pay/logos@2.1.0/dist/ideal-issuers/bunq/ideal-issuer-bunq-mollie-32x24.svg) |
