@@ -55,7 +55,7 @@ final class IDealIssuerService {
 				IDealIssuerCode::INGBNL2A->value => 'ing',
 				IDealIssuerCode::KNABNL2H->value => 'knab',
 				IDealIssuerCode::NTSBDEB1->value => 'n26',
-				IDealIssuerCode::NNBANL2G->value => 'nationale-nederlanden',
+				IDealIssuerCode::NNBANL2G->value => 'nn',
 				IDealIssuerCode::RABONL2U->value => 'rabobank',
 				IDealIssuerCode::RBRBNL21->value => 'regiobank',
 				IDealIssuerCode::REVOLT21->value => 'revolut',
