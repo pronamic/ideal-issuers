@@ -54,6 +54,6 @@ final class IDealIssuers implements Countable, IteratorAggregate, JsonSerializab
 	 * @return IDealIssuer[]
 	 */
 	public function jsonSerialize(): array {
-		return $this->items;
+		return \array_values( $this->items );
 	}
 }
