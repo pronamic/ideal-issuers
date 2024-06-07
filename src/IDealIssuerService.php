@@ -42,7 +42,7 @@ final class IDealIssuerService {
 		];
 
 		foreach ( $codes as $code ) {
-			$issuers->items[] = new IDealIssuer( $code->value, $code->name() );
+			$issuers->items[ $code->value ] = new IDealIssuer( $code->value, $code->name() );
 		}
 
 		if ( \class_exists( ImageService::class ) ) {

@@ -19,13 +19,13 @@ use Traversable;
 /**
  * The iDEAL issuers class
  * 
- * @phpstan-implements IteratorAggregate<int, IDealIssuer>
+ * @phpstan-implements IteratorAggregate<string, IDealIssuer>
  */
 final class IDealIssuers implements Countable, IteratorAggregate, JsonSerializable {
 	/**
 	 * Code.
 	 *
-	 * @var IDealIssuer[]
+	 * @var array<string, IDealIssuer>
 	 */
 	public array $items = [];
 
@@ -41,7 +41,7 @@ final class IDealIssuers implements Countable, IteratorAggregate, JsonSerializab
 	/**
 	 * Get iterator.
 	 * 
-	 * @return ArrayIterator<int, IDealIssuer>
+	 * @return ArrayIterator<string, IDealIssuer>
 	 */
 	public function getIterator(): Traversable {
 		return new ArrayIterator( $this->items );
